@@ -1,0 +1,11 @@
+#!/bin/bash
+if [[ -z "$1" ]]
+then
+        echo 'You need to set an $arg!'
+elif [[ -n "$2" ]]
+then
+        echo 'Slow down! Only one argument!'
+else
+        echo '$(wc -l $arg)'
+fi
+
